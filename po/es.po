@@ -1,0 +1,233 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GdMap 0.8.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-15 15:51+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Marcos Del Puerto Garcia <mpuertog@gmail.com>\n"
+"Language-Team: Marcos del Puerto <mpuertog@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../data/gdmap.desktop.in.h:1
+msgid "Display disk space using tree maps"
+msgstr "Mostrar la utilización de disco usando Treemaps"
+
+#: ../data/gdmap.desktop.in.h:2
+msgid "Graphical Disk Map"
+msgstr "Graphical Disk Map"
+
+#: ../src/gui_main.c:94
+msgid "_File"
+msgstr "_Archivo"
+
+#: ../src/gui_main.c:95
+msgid "_View"
+msgstr "_Ver"
+
+#: ../src/gui_main.c:96
+msgid "_Help"
+msgstr "Ay_uda"
+
+#: ../src/gui_main.c:97
+msgid "_Open..."
+msgstr "_Abrir..."
+
+#: ../src/gui_main.c:98
+msgid "Open a folder"
+msgstr "Abrir una carpeta"
+
+#: ../src/gui_main.c:101
+msgid "_Quit"
+msgstr "_Salir"
+
+#: ../src/gui_main.c:102
+msgid "Exit program"
+msgstr "Salir del programa"
+
+#: ../src/gui_main.c:105
+msgid "_Back"
+msgstr "_Volver"
+
+#: ../src/gui_main.c:106
+msgid "Go back one step"
+msgstr "Retroceder un paso"
+
+#: ../src/gui_main.c:109
+msgid "_Forward"
+msgstr "_Atrás"
+
+#: ../src/gui_main.c:110
+msgid "Go forward one step"
+msgstr "Avanzar un paso"
+
+#: ../src/gui_main.c:113
+msgid "_Up"
+msgstr "_Arriba"
+
+#: ../src/gui_main.c:114
+msgid "Go up one level"
+msgstr "Subir un nivel"
+
+#: ../src/gui_main.c:117
+msgid "_Top"
+msgstr "_Nivel superior"
+
+#: ../src/gui_main.c:118
+msgid "Goto toplevel folder"
+msgstr "Ir a la carpeta superior"
+
+#: ../src/gui_main.c:121
+msgid "_Settings..."
+msgstr "_Configuración..."
+
+#: ../src/gui_main.c:122
+msgid "Edit settings"
+msgstr "Editar configuración"
+
+#: ../src/gui_main.c:125
+msgid "_About..."
+msgstr "_Acerca de..."
+
+#: ../src/gui_main.c:126
+msgid "About this program"
+msgstr "Acerca de este programa"
+
+#: ../src/gui_main.c:129
+msgid "_Refresh"
+msgstr "_Actualizar"
+
+#: ../src/gui_main.c:130
+msgid "Refresh current view"
+msgstr "Actualizar vista"
+
+#: ../src/gui_main.c:402
+msgid "scanning..."
+msgstr "escaneado..."
+
+#: ../src/gui_main.c:441
+msgid "Choose folder"
+msgstr "Seleccionar carpeta"
+
+#: ../src/about.c:60
+msgid "GdMap is a tool which allows you to graphically explore your disks."
+msgstr ""
+"GdMap es una herramienta que permite explorar tus discos de forma gráfica."
+
+#: ../src/about.c:62
+msgid "translator-credits"
+msgstr "Marcos del Puerto <mpuertog@gmail.com>"
+
+#: ../src/preferences.c:288
+msgid "Default color"
+msgstr "Color por defecto"
+
+#: ../src/preferences.c:292
+msgid "Color for file position"
+msgstr "Color para la posición del fichero"
+
+#: ../src/preferences.c:296
+msgid "Color for folder position"
+msgstr "Color para la posición de la carpeta"
+
+#: ../src/preferences.c:300
+msgid "Color for folders"
+msgstr "Color para carpetas"
+
+#: ../src/preferences.c:306 ../src/preferences.c:309
+msgid "Enter file extensions here"
+msgstr "Introduce las extensiones de ficheros aquí"
+
+#: ../src/preferences.c:341
+msgid "Delete"
+msgstr "Borrar"
+
+#: ../src/preferences.c:360
+msgid "Color profile"
+msgstr "Perfil de color"
+
+#: ../src/preferences.c:380
+msgid "Basic colors"
+msgstr "Colores básicos"
+
+#: ../src/preferences.c:396
+msgid "File colors"
+msgstr "Color para ficheros"
+
+#: ../src/preferences.c:420
+msgid "add new color"
+msgstr "añadir nuevo color"
+
+#: ../src/preferences.c:485
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: ../src/preferences.c:496
+msgid "Display type"
+msgstr "Tipo de representación"
+
+#: ../src/preferences.c:502
+msgid "Standard cushioned treemaps"
+msgstr "Treemaps con almohadillado estándar"
+
+#: ../src/preferences.c:506
+msgid "Squarified cushioned treemaps"
+msgstr "Treemaps con almohadillado rectangular"
+
+#: ../src/preferences.c:520
+msgid "Cushion settings"
+msgstr "Configuración del almohadillado"
+
+#: ../src/preferences.c:528
+msgid "Height factor:"
+msgstr "Factor de altura:"
+
+#: ../src/preferences.c:540
+msgid "Decreasing height:"
+msgstr "Decrecimiento de la altura:"
+
+#: ../src/preferences.c:553
+msgid "General display"
+msgstr "Representación estándar"
+
+#: ../src/preferences.c:561
+msgid "Maximum depth:"
+msgstr "Profundidad máxima:"
+
+#. pre instance
+#: ../src/preferences.c:567
+msgid "Use average color of children for folders"
+msgstr "Usar una mezcla de coloror de las hijas para las carpetas"
+
+#: ../src/preferences.c:576
+msgid "(0=unlimited)"
+msgstr "(0=ilimitado)"
+
+#: ../src/preferences.c:582
+msgid "Color settings"
+msgstr "Configuración de color"
+
+#. gtk_table_set_homogeneous(GTK_TABLE(table), TRUE);
+#: ../src/preferences.c:591
+msgid "Enable colors"
+msgstr "Habilitar colores"
+
+#: ../src/preferences.c:598
+msgid "Color profile..."
+msgstr "Perfil de colores..."
+
+#: ../src/preferences.c:613
+msgid "Scanning options (requires re-scan)"
+msgstr "Opciones de escaneo (requiere reescaneo)"
+
+#: ../src/preferences.c:619
+msgid "Descend directories on other filesystems"
+msgstr "Analizar recursivamente los directorios de otros sistemas de ficheros"
+
+#: ../src/preferences.c:624
+msgid "Use allocated disk size of files"
+msgstr "Utilizar el espacio asignado en disco a los ficheros"

@@ -1,0 +1,25 @@
+Source: gdmap
+Section: graphics
+Priority: optional
+Maintainer: Stephen Kitt <skitt@debian.org>
+Build-Depends:
+ autotools-dev,
+ debhelper (>= 9),
+ libgtk2.0-dev,
+ libxml-parser-perl,
+ libxml2-dev
+Homepage: http://gdmap.sourceforge.net
+Standards-Version: 3.9.4
+Vcs-Git: git://anonscm.debian.org/collab-maint/gdmap.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/gdmap.git;a=summary
+
+Package: gdmap
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Tool to visualize diskspace
+ GdMap is a tool which allows you to visualize disk space. Ever
+ wondered why your hard disk is full or what directory and files take
+ up most of the space? With GdMap these questions can be answered
+ quickly. To display directory structures cushion treemaps are used
+ which visualize a complete folder or even the whole hard drive with
+ one picture.

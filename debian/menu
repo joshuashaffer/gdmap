@@ -1,0 +1,3 @@
+?package(gdmap):needs="X11" section="Applications/File Management"\
+  icon="/usr/share/pixmaps/gdmap_icon.xpm" title="gdmap"\
+  command="/usr/bin/gdmap"

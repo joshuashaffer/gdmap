@@ -1,0 +1,41 @@
+2008-06-15 [0.8.1]	Sgop	(sgop at users.sourceforge.net)
+	* added new languages (it, es)
+
+2008-05-23 [0.8.0]	Sgop	(sgop at users.sourceforge.net)
+	* added new options
+	
+2005-12-27 [0.7.5]	Sgop	(sgop at users.sourceforge.net)
+	* added bulgarian translation
+	* added color editor
+	* added few more color features
+	* delayed canvas redraw to allow smoother settings editing on slow CPU
+	
+2005-10-26 [0.7.0]	Sgop	(sgop at users.sourceforge.net)
+	* added max depth setting
+	* now saving/loading preferences
+	* added refresh functionality
+	* added ability to disable colors
+	* added translations: croatian, turkish, russian, hebrew, french
+	
+2005-10-16 [0.6.0]	Sgop	(sgop at users.sourceforge.net)
+	* showing progress bar while scanning disk
+	* added more status info for the current selection
+	* added more default colors.
+	* added command line arg which accepts initial folder
+	
+2005-10-09 [0.5.0]	Sgop	(sgop at users.sourceforge.net)
+	* added about dialog
+	* added preferences
+	* added squarified treemaps
+	
+2005-10-03 [0.4.2]	Sgop	(sgop at users.sourceforge.net)
+	* fixed color save
+	* correct project makefiles
+	* added menu
+	
+2005-10-03 [0.4.1]	Sgop	(sgop at users.sourceforge.net)
+	* bugfix: removed uneccessary header
+	* added: size label for complete view.
+	
+2005-10-02 [0.4.0]	Sgop	(sgop at users.sourceforge.net)
+	* completely redesigned UI and clean up code.

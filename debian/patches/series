@@ -1,0 +1,12 @@
+manpage.patch
+desktop.patch
+gtk-widget-macros.patch
+pixmap-location.patch
+no-error-on-missing-settings.patch
+dk-to-da.patch
+add-filetypes.patch
+ignore-missing-po-files.patch
+spelling-fixes.patch
+math-underlink.patch
+format-strings.patch
+gtk-set-locale.patch

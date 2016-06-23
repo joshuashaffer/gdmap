@@ -1,0 +1,238 @@
+# CROATIAN translation of GdMap.
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# MARIO DANIC <mario.danic@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GdMap 0.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-15 15:51+0200\n"
+"PO-Revision-Date: 2008-05-25 17:00+0200\n"
+"Last-Translator: MARIO DANIC <mario.danic@gmail.com>\n"
+"Language-Team: CROATIAN <mario.danic@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gdmap.desktop.in.h:1
+msgid "Display disk space using tree maps"
+msgstr "Prikazi diskovni prostor koristeci drvo mapa"
+
+#: ../data/gdmap.desktop.in.h:2
+msgid "Graphical Disk Map"
+msgstr "Graficka disk mapa"
+
+#: ../src/gui_main.c:94
+msgid "_File"
+msgstr "_Datoteka"
+
+#: ../src/gui_main.c:95
+msgid "_View"
+msgstr "_Pregledaj"
+
+#: ../src/gui_main.c:96
+msgid "_Help"
+msgstr "_Pomoc"
+
+#: ../src/gui_main.c:97
+msgid "_Open..."
+msgstr "_Otvori..."
+
+#: ../src/gui_main.c:98
+msgid "Open a folder"
+msgstr "Otvori folder"
+
+#: ../src/gui_main.c:101
+msgid "_Quit"
+msgstr "_Izlaz"
+
+#: ../src/gui_main.c:102
+msgid "Exit program"
+msgstr "Izlaz iz programa"
+
+#: ../src/gui_main.c:105
+msgid "_Back"
+msgstr "_Natrag"
+
+#: ../src/gui_main.c:106
+msgid "Go back one step"
+msgstr "Ponisti"
+
+#: ../src/gui_main.c:109
+msgid "_Forward"
+msgstr "_Ponovi"
+
+#: ../src/gui_main.c:110
+msgid "Go forward one step"
+msgstr "Ponovi jedan korak"
+
+#: ../src/gui_main.c:113
+msgid "_Up"
+msgstr "_Gore"
+
+#: ../src/gui_main.c:114
+msgid "Go up one level"
+msgstr "Gore jedan stupanj"
+
+#: ../src/gui_main.c:117
+msgid "_Top"
+msgstr "_Vrh"
+
+#: ../src/gui_main.c:118
+msgid "Goto toplevel folder"
+msgstr "Idi u vrsnu mapu"
+
+#: ../src/gui_main.c:121
+msgid "_Settings..."
+msgstr "_Postavke..."
+
+#: ../src/gui_main.c:122
+msgid "Edit settings"
+msgstr "Promijeni postavke"
+
+#: ../src/gui_main.c:125
+msgid "_About..."
+msgstr "_O programu..."
+
+#: ../src/gui_main.c:126
+msgid "About this program"
+msgstr "O ovom programu"
+
+#: ../src/gui_main.c:129
+msgid "_Refresh"
+msgstr "_Osvjezi"
+
+#: ../src/gui_main.c:130
+msgid "Refresh current view"
+msgstr "Osvjezi trenutni pogled"
+
+#: ../src/gui_main.c:402
+msgid "scanning..."
+msgstr "Skeniram..."
+
+#: ../src/gui_main.c:441
+msgid "Choose folder"
+msgstr "Odaberi mapu"
+
+#: ../src/about.c:60
+msgid "GdMap is a tool which allows you to graphically explore your disks."
+msgstr "GdMap je alat koji vam omogucava graficki pregled diska."
+
+#: ../src/about.c:62
+msgid "translator-credits"
+msgstr "Mario Danic <mario.danic@gmail.com>"
+
+#: ../src/preferences.c:288
+msgid "Default color"
+msgstr "Podrazumijevana boja"
+
+#: ../src/preferences.c:292
+msgid "Color for file position"
+msgstr "Boja za datotečnu poziciju"
+
+#: ../src/preferences.c:296
+msgid "Color for folder position"
+msgstr "Boja za poziciju foldera"
+
+#: ../src/preferences.c:300
+msgid "Color for folders"
+msgstr "Boja za foldere"
+
+#: ../src/preferences.c:306 ../src/preferences.c:309
+msgid "Enter file extensions here"
+msgstr "Unesi datotečnu ekstenziju ovdje"
+
+#: ../src/preferences.c:341
+msgid "Delete"
+msgstr "Obriši"
+
+#: ../src/preferences.c:360
+msgid "Color profile"
+msgstr "Profil boja"
+
+#: ../src/preferences.c:380
+msgid "Basic colors"
+msgstr "Osnovne boje"
+
+#: ../src/preferences.c:396
+msgid "File colors"
+msgstr "Datotečne boje"
+
+#: ../src/preferences.c:420
+msgid "add new color"
+msgstr "Dodaj novu boju"
+
+#: ../src/preferences.c:485
+msgid "Preferences"
+msgstr "Personalizacija"
+
+#: ../src/preferences.c:496
+msgid "Display type"
+msgstr "Tip prikaza"
+
+#: ../src/preferences.c:502
+msgid "Standard cushioned treemaps"
+msgstr "Standardno drvo mapa"
+
+#: ../src/preferences.c:506
+msgid "Squarified cushioned treemaps"
+msgstr "Kockasto drvo mapa"
+
+#: ../src/preferences.c:520
+msgid "Cushion settings"
+msgstr "Cushion postavke"
+
+#: ../src/preferences.c:528
+msgid "Height factor:"
+msgstr "Visinski faktor:"
+
+#: ../src/preferences.c:540
+msgid "Decreasing height:"
+msgstr "Smanji visinu:"
+
+#: ../src/preferences.c:553
+msgid "General display"
+msgstr "Generalni prikaz"
+
+#: ../src/preferences.c:561
+msgid "Maximum depth:"
+msgstr "Maksimalna dubina:"
+
+#. pre instance
+#: ../src/preferences.c:567
+msgid "Use average color of children for folders"
+msgstr "Koristi često korištenu boju djece za foldere"
+
+#: ../src/preferences.c:576
+msgid "(0=unlimited)"
+msgstr "(0=neograniceno)"
+
+#: ../src/preferences.c:582
+msgid "Color settings"
+msgstr "Boje postavke"
+
+#. gtk_table_set_homogeneous(GTK_TABLE(table), TRUE);
+#: ../src/preferences.c:591
+msgid "Enable colors"
+msgstr "Omoguci boje"
+
+#: ../src/preferences.c:598
+msgid "Color profile..."
+msgstr "Profil boja..."
+
+#: ../src/preferences.c:613
+msgid "Scanning options (requires re-scan)"
+msgstr "Opcije skeniranja (zahtjeva ponovno skeniranje)"
+
+#: ../src/preferences.c:619
+msgid "Descend directories on other filesystems"
+msgstr "Prikaži direktorije na drugim filesystemima"
+
+#: ../src/preferences.c:624
+msgid "Use allocated disk size of files"
+msgstr "Koristi alocirani diskovni prostor datoteka"
+
+#, fuzzy
+#~ msgid "Folder color"
+#~ msgstr "Omogucene boje"

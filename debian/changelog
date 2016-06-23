@@ -1,0 +1,88 @@
+gdmap (0.8.1-3) unstable; urgency=low
+
+  * Import math-underlink.patch from Ubuntu, to link libm explicitly
+    (Closes: #713618). Thanks to Daniel T Chen!
+  * Switch to my Debian address.
+  * Use canonical VCS URIs.
+  * Add format-strings.patch to fix format string vulnerabilites
+    identified with hardening options enabled.
+  * Add gtk-set-locale.patch to drop deprecated gtk_set_locale().
+  * Switch to debhelper compat level 9 to enable automatic hardening.
+  * Use the final 1.0 copyright-format URL.
+  * Standards-Version 3.9.4, no further change required.
+
+ -- Stephen Kitt <skitt@debian.org>  Sat, 22 Jun 2013 20:32:35 +0200
+
+gdmap (0.8.1-2) unstable; urgency=low
+
+  * New maintainer (Closes: #594406).
+  * Switch to source format "(3.0) quilt":
+    - Drop dependency on dpatch.
+    - Drop 01_gtktooltip.dpatch, unused.
+    - Drop 02_gtk-disable-deprecated.dpatch, unused.
+    - Import 03_manpage.dpatch as manpage.patch.
+    - Import 04_deprecated_GTK.dpatch as gtk-widget-macros.patch and
+      handle GTK_WIDGET_SET_FLAGS as well (Closes: #621983).
+    - Drop data/gdmap.desktop, intltool-extract, intltool-merge and
+      intltool-update (they are generated during the build).
+  * Simplify debian/rules using dh 7 and autotools-dev.
+  * Correctly load gdmap's icon, and avoid printing an error message if
+    the settings file doesn't exist (Closes: #579043).
+  * Use link to specific GPL version in debian/copyright, and update
+    copyright dates.
+  * Add ${misc:Depends} dependency since we're using debhelper.
+  * Add watch file.
+  * Remove the obsolete "Encoding" directive from the desktop file.
+  * Import patch adding new file types from Ubuntu.
+  * Standards-Version 3.9.2, no further change required.
+  * Convert debian/copyright to DEP5 format.
+  * Reduce dependencies by linking with --as-needed (thanks to Stefano
+    Rivera for this and other suggestions!).
+  * Fix grammatical mistake (as suggested by Lintian).
+  * Wrap and sort dependencies.
+
+ -- Stephen Kitt <steve@sk2.org>  Tue, 07 Jun 2011 20:18:18 +0200
+
+gdmap (0.8.1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * debian/patches/04_deprecated_GTK.dpatch:
+    - Replace deprecated GTK macro with related function (Closes: #577374).
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Sun, 09 May 2010 20:23:08 +0200
+
+gdmap (0.8.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Mario Iseli <mario@debian.org>  Tue, 18 Aug 2009 07:59:54 +0200
+
+gdmap (0.7.5-4) unstable; urgency=low
+
+  * Added 02_disable_gtk_deprecated.dpatch to fix implicit pointer conversion,
+    thanks to Dann Frazier (Closes: #445881).
+
+ -- Mario Iseli <mario@debian.org>  Tue, 20 Nov 2007 11:42:11 +0100
+
+gdmap (0.7.5-3) unstable; urgency=low
+
+  * New maintainer E-Mail.
+  * Build-depend on dpatch.
+  * Added 01_tooltip.dpatch to avoid FTBFS (Closes: #444522).
+  * Updated debian/menu to new menu structure.
+
+ -- Mario Iseli <mario@debian.org>  Sat, 06 Oct 2007 23:03:36 +0200
+
+gdmap (0.7.5-2) unstable; urgency=medium
+
+  * Support for files > 2.0GB, done by adding AC_SYS_LARGEFILE to configure.ac,
+    this sets _FILE_OFFSET_BITS to 64. (Closes: #367663).
+
+ -- Mario Iseli <admin@marioiseli.com>  Sun, 21 May 2006 23:30:51 +0200
+
+gdmap (0.7.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #345898).
+
+ -- Mario Iseli <admin@marioiseli.com>  Fri,  3 Feb 2006 23:27:25 +0100
+

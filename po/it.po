@@ -1,0 +1,233 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GdMap 0.8.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-15 15:51+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Michele Mangili <cimangi87@yahoo.it>\n"
+"Language-Team: Italian <mangilimic@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+
+#: ../data/gdmap.desktop.in.h:1
+msgid "Display disk space using tree maps"
+msgstr "Visualizza i file su disco utilizzando gli alberi"
+
+#: ../data/gdmap.desktop.in.h:2
+msgid "Graphical Disk Map"
+msgstr "Mappa grafica dischi"
+
+#: ../src/gui_main.c:94
+msgid "_File"
+msgstr "_File"
+
+#: ../src/gui_main.c:95
+msgid "_View"
+msgstr "_Visualizza"
+
+#: ../src/gui_main.c:96
+msgid "_Help"
+msgstr "A_iuto"
+
+#: ../src/gui_main.c:97
+msgid "_Open..."
+msgstr "_Apri..."
+
+#: ../src/gui_main.c:98
+msgid "Open a folder"
+msgstr "Apri una cartella"
+
+#: ../src/gui_main.c:101
+msgid "_Quit"
+msgstr "_Esci"
+
+#: ../src/gui_main.c:102
+msgid "Exit program"
+msgstr "Esci dal programma"
+
+#: ../src/gui_main.c:105
+msgid "_Back"
+msgstr "_Indietro"
+
+#: ../src/gui_main.c:106
+msgid "Go back one step"
+msgstr "Vai indietro di un passo"
+
+#: ../src/gui_main.c:109
+msgid "_Forward"
+msgstr "_Avanti"
+
+#: ../src/gui_main.c:110
+msgid "Go forward one step"
+msgstr "Vai avanti di un passo"
+
+#: ../src/gui_main.c:113
+msgid "_Up"
+msgstr "_Su"
+
+#: ../src/gui_main.c:114
+msgid "Go up one level"
+msgstr "Vai alla cartella di livello superiore"
+
+#: ../src/gui_main.c:117
+msgid "_Top"
+msgstr "_Primo livello"
+
+#: ../src/gui_main.c:118
+msgid "Goto toplevel folder"
+msgstr "Vai alla cartella di primo livello"
+
+#: ../src/gui_main.c:121
+msgid "_Settings..."
+msgstr "_Impostazioni..."
+
+#: ../src/gui_main.c:122
+msgid "Edit settings"
+msgstr "Modifica le impostazioni"
+
+#: ../src/gui_main.c:125
+msgid "_About..."
+msgstr "I_nformazioni"
+
+#: ../src/gui_main.c:126
+msgid "About this program"
+msgstr "Informazioni su questo programma"
+
+#: ../src/gui_main.c:129
+msgid "_Refresh"
+msgstr "_Aggiorna"
+
+#: ../src/gui_main.c:130
+msgid "Refresh current view"
+msgstr "Aggiorna la vista corrente"
+
+#: ../src/gui_main.c:402
+msgid "scanning..."
+msgstr "scansione..."
+
+#: ../src/gui_main.c:441
+msgid "Choose folder"
+msgstr "Scegli una cartella"
+
+#: ../src/about.c:60
+msgid "GdMap is a tool which allows you to graphically explore your disks."
+msgstr ""
+"GdMap è un programma che permette di esplorare graficamente il contenuto dei "
+"dischi."
+
+#: ../src/about.c:62
+msgid "translator-credits"
+msgstr "Michele Mangili <mangilimic@gmail.com>"
+
+#: ../src/preferences.c:288
+msgid "Default color"
+msgstr "Colore predefinito"
+
+#: ../src/preferences.c:292
+msgid "Color for file position"
+msgstr "Colore per la posizione dei file"
+
+#: ../src/preferences.c:296
+msgid "Color for folder position"
+msgstr "Colore per la posizione delle cartelle"
+
+#: ../src/preferences.c:300
+msgid "Color for folders"
+msgstr "Colore per le cartelle"
+
+#: ../src/preferences.c:306 ../src/preferences.c:309
+msgid "Enter file extensions here"
+msgstr "Inserire l'estensione dei file"
+
+#: ../src/preferences.c:341
+msgid "Delete"
+msgstr "Rimuovi"
+
+#: ../src/preferences.c:360
+msgid "Color profile"
+msgstr "Profilo colori"
+
+#: ../src/preferences.c:380
+msgid "Basic colors"
+msgstr "Colori base"
+
+#: ../src/preferences.c:396
+msgid "File colors"
+msgstr "Colori dei file"
+
+#: ../src/preferences.c:420
+msgid "add new color"
+msgstr "aggiungi un nuovo colore"
+
+#: ../src/preferences.c:485
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: ../src/preferences.c:496
+msgid "Display type"
+msgstr "Modalità visualizzazione"
+
+#: ../src/preferences.c:502
+msgid "Standard cushioned treemaps"
+msgstr "Albero con settori standard"
+
+#: ../src/preferences.c:506
+msgid "Squarified cushioned treemaps"
+msgstr "Albero con settori rettangolari"
+
+#: ../src/preferences.c:520
+msgid "Cushion settings"
+msgstr "Impostazioni settori"
+
+#: ../src/preferences.c:528
+msgid "Height factor:"
+msgstr "Fattore altezza:"
+
+#: ../src/preferences.c:540
+msgid "Decreasing height:"
+msgstr "Riduzione altezza:"
+
+#: ../src/preferences.c:553
+msgid "General display"
+msgstr "Visualizzazione generica"
+
+#: ../src/preferences.c:561
+msgid "Maximum depth:"
+msgstr "Profondità massima:"
+
+#. pre instance
+#: ../src/preferences.c:567
+msgid "Use average color of children for folders"
+msgstr "Per le cartelle usa il colore medio degli elementi figli"
+
+#: ../src/preferences.c:576
+msgid "(0=unlimited)"
+msgstr "(0=nessun limite)"
+
+#: ../src/preferences.c:582
+msgid "Color settings"
+msgstr "Impostazioni colori"
+
+#. gtk_table_set_homogeneous(GTK_TABLE(table), TRUE);
+#: ../src/preferences.c:591
+msgid "Enable colors"
+msgstr "Attiva colori"
+
+#: ../src/preferences.c:598
+msgid "Color profile..."
+msgstr "Profilo colori..."
+
+#: ../src/preferences.c:613
+msgid "Scanning options (requires re-scan)"
+msgstr "Opzioni scansione (richiede una nuova scansione)"
+
+#: ../src/preferences.c:619
+msgid "Descend directories on other filesystems"
+msgstr "Esplora le cartelle di altri filesystem"
+
+#: ../src/preferences.c:624
+msgid "Use allocated disk size of files"
+msgstr "Usa la dimensione dei file allocata su disco"

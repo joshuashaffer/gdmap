@@ -1,0 +1,5 @@
+	../data/gdmap.desktop.in \
+	../src/gui_main.c \
+	../src/gui_support.c \
+	../src/about.c \
+	../src/preferences.c

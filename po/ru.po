@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GdMap 0.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-15 15:51+0200\n"
+"PO-Revision-Date: 2005-10-23 16:54+0200\n"
+"Last-Translator: Misha Bukin <misha.bukin@gmail.com>\n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gdmap.desktop.in.h:1
+msgid "Display disk space using tree maps"
+msgstr "Показать место на диске пользующеся древовидными схемами"
+
+#: ../data/gdmap.desktop.in.h:2
+msgid "Graphical Disk Map"
+msgstr "Графическая карта диска"
+
+#: ../src/gui_main.c:94
+msgid "_File"
+msgstr "_Файл"
+
+#: ../src/gui_main.c:95
+msgid "_View"
+msgstr "_Вид"
+
+#: ../src/gui_main.c:96
+msgid "_Help"
+msgstr "_Помощь"
+
+#: ../src/gui_main.c:97
+msgid "_Open..."
+msgstr "_Открыть..."
+
+#: ../src/gui_main.c:98
+msgid "Open a folder"
+msgstr "Открыть папку"
+
+#: ../src/gui_main.c:101
+msgid "_Quit"
+msgstr "_Выйти"
+
+#: ../src/gui_main.c:102
+msgid "Exit program"
+msgstr "Выйти из программы"
+
+#: ../src/gui_main.c:105
+msgid "_Back"
+msgstr "_Назад"
+
+#: ../src/gui_main.c:106
+msgid "Go back one step"
+msgstr "Иди назад на один шаг"
+
+#: ../src/gui_main.c:109
+msgid "_Forward"
+msgstr "_Вперед"
+
+#: ../src/gui_main.c:110
+msgid "Go forward one step"
+msgstr "Иди вперед на один шаг"
+
+#: ../src/gui_main.c:113
+msgid "_Up"
+msgstr "_Верх"
+
+#: ../src/gui_main.c:114
+msgid "Go up one level"
+msgstr "Перейти на один уровень выше"
+
+#: ../src/gui_main.c:117
+msgid "_Top"
+msgstr "_Высший"
+
+#: ../src/gui_main.c:118
+msgid "Goto toplevel folder"
+msgstr "Перейти на папку высшего уровеня"
+
+#: ../src/gui_main.c:121
+msgid "_Settings..."
+msgstr "_Настройки..."
+
+#: ../src/gui_main.c:122
+msgid "Edit settings"
+msgstr "Редактировать настройки"
+
+#: ../src/gui_main.c:125
+msgid "_About..."
+msgstr "_О..."
+
+#: ../src/gui_main.c:126
+msgid "About this program"
+msgstr "Об этой программе"
+
+#: ../src/gui_main.c:129
+msgid "_Refresh"
+msgstr "_Обновить"
+
+#: ../src/gui_main.c:130
+msgid "Refresh current view"
+msgstr "Обновить текущий вид"
+
+#: ../src/gui_main.c:402
+msgid "scanning..."
+msgstr "Сканирование..."
+
+#: ../src/gui_main.c:441
+msgid "Choose folder"
+msgstr "Выберите папку"
+
+#: ../src/about.c:60
+msgid "GdMap is a tool which allows you to graphically explore your disks."
+msgstr "GdMap это инструмент позволяющий графически исследовать ваши диски."
+
+#: ../src/about.c:62
+msgid "translator-credits"
+msgstr "Misha Bukin <misha_bomb@yahoo.com>"
+
+#: ../src/preferences.c:288
+msgid "Default color"
+msgstr "Цвет по-умолчанию"
+
+#: ../src/preferences.c:292
+msgid "Color for file position"
+msgstr "Цвет для позиции файла"
+
+#: ../src/preferences.c:296
+msgid "Color for folder position"
+msgstr "Цвет для позиции папки"
+
+#: ../src/preferences.c:300
+msgid "Color for folders"
+msgstr "Цвет для папок"
+
+#: ../src/preferences.c:306 ../src/preferences.c:309
+msgid "Enter file extensions here"
+msgstr "Введите расширение файла"
+
+#: ../src/preferences.c:341
+msgid "Delete"
+msgstr "Удалить"
+
+#: ../src/preferences.c:360
+msgid "Color profile"
+msgstr "Цветовые профили"
+
+#: ../src/preferences.c:380
+msgid "Basic colors"
+msgstr "Базовые цвета"
+
+#: ../src/preferences.c:396
+msgid "File colors"
+msgstr "Цвета файлов"
+
+#: ../src/preferences.c:420
+msgid "add new color"
+msgstr "Добавить новый цвет"
+
+#: ../src/preferences.c:485
+msgid "Preferences"
+msgstr "Предпочтения"
+
+#: ../src/preferences.c:496
+msgid "Display type"
+msgstr "Тип дисплея"
+
+#: ../src/preferences.c:502
+msgid "Standard cushioned treemaps"
+msgstr "Стандартные абсорбирующие древовидные схемы "
+
+#: ../src/preferences.c:506
+msgid "Squarified cushioned treemaps"
+msgstr "Квадратичные абсорбирующие  древовидные схемы"
+
+#: ../src/preferences.c:520
+msgid "Cushion settings"
+msgstr "Настройка заглушки"
+
+#: ../src/preferences.c:528
+msgid "Height factor:"
+msgstr "Фактор высоты:"
+
+#: ../src/preferences.c:540
+msgid "Decreasing height:"
+msgstr "Убывающая высота:"
+
+#: ../src/preferences.c:553
+msgid "General display"
+msgstr "Основной дисплей"
+
+#: ../src/preferences.c:561
+msgid "Maximum depth:"
+msgstr "Максимальная глубина:"
+
+#. pre instance
+#: ../src/preferences.c:567
+msgid "Use average color of children for folders"
+msgstr "Использовать средний цвет потомков для папок"
+
+#: ../src/preferences.c:576
+msgid "(0=unlimited)"
+msgstr "(0=неограниченный)"
+
+#: ../src/preferences.c:582
+msgid "Color settings"
+msgstr "Настройка цвета"
+
+#. gtk_table_set_homogeneous(GTK_TABLE(table), TRUE);
+#: ../src/preferences.c:591
+msgid "Enable colors"
+msgstr "Включить цвета"
+
+#: ../src/preferences.c:598
+msgid "Color profile..."
+msgstr "Цветовые профили..."
+
+#: ../src/preferences.c:613
+msgid "Scanning options (requires re-scan)"
+msgstr "Опции сканирования (требуется повторное сканирование)"
+
+#: ../src/preferences.c:619
+msgid "Descend directories on other filesystems"
+msgstr "Нижнеуровневые директории на других фаловых системах"
+
+#: ../src/preferences.c:624
+msgid "Use allocated disk size of files"
+msgstr "Использовать выделенное дисковое пространство файлов"
+
+#~ msgid "Folder color"
+#~ msgstr "Цвет папки"

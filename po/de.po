@@ -1,0 +1,235 @@
+# GdMap.
+# Copyright (C) 2005-2008, Markus Lausser <sgop@users.sourceforge.net>
+# This file is distributed under the same license as the GdMap package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GdMap 0.8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-15 15:51+0200\n"
+"PO-Revision-Date: 2008-05-23 16:05+0200\n"
+"Last-Translator: Markus Lausser <sgop@users.sourceforge.net>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gdmap.desktop.in.h:1
+msgid "Display disk space using tree maps"
+msgstr "Plattenspeicher graphisch darstellen"
+
+#: ../data/gdmap.desktop.in.h:2
+msgid "Graphical Disk Map"
+msgstr "Plattenspeicher anzeigen"
+
+#: ../src/gui_main.c:94
+msgid "_File"
+msgstr "_Datei"
+
+#: ../src/gui_main.c:95
+msgid "_View"
+msgstr "_Anzeige"
+
+#: ../src/gui_main.c:96
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: ../src/gui_main.c:97
+msgid "_Open..."
+msgstr "Ö_ffnen..."
+
+#: ../src/gui_main.c:98
+msgid "Open a folder"
+msgstr "Verzeichnis öffnen"
+
+#: ../src/gui_main.c:101
+msgid "_Quit"
+msgstr "_Beenden"
+
+#: ../src/gui_main.c:102
+msgid "Exit program"
+msgstr "Programm beenden"
+
+#: ../src/gui_main.c:105
+msgid "_Back"
+msgstr "_Zurück"
+
+#: ../src/gui_main.c:106
+msgid "Go back one step"
+msgstr "Eine Ansicht zurück"
+
+#: ../src/gui_main.c:109
+msgid "_Forward"
+msgstr "_Vorwärts"
+
+#: ../src/gui_main.c:110
+msgid "Go forward one step"
+msgstr "Einen Ansicht nach vorne"
+
+#: ../src/gui_main.c:113
+msgid "_Up"
+msgstr "Nach _oben"
+
+#: ../src/gui_main.c:114
+msgid "Go up one level"
+msgstr "Ein Verzeichnis hochgehen"
+
+#: ../src/gui_main.c:117
+msgid "_Top"
+msgstr "_Höchstes"
+
+#: ../src/gui_main.c:118
+msgid "Goto toplevel folder"
+msgstr "Ins oberste Verzeichnis wechseln"
+
+#: ../src/gui_main.c:121
+msgid "_Settings..."
+msgstr "_Einstellungen..."
+
+#: ../src/gui_main.c:122
+msgid "Edit settings"
+msgstr "Einstellungen bearbeiten"
+
+#: ../src/gui_main.c:125
+msgid "_About..."
+msgstr "_Über..."
+
+#: ../src/gui_main.c:126
+msgid "About this program"
+msgstr "Über dieses Programm"
+
+#: ../src/gui_main.c:129
+msgid "_Refresh"
+msgstr "_Aktualisieren"
+
+#: ../src/gui_main.c:130
+msgid "Refresh current view"
+msgstr "Ansicht aktualisieren"
+
+#: ../src/gui_main.c:402
+msgid "scanning..."
+msgstr "durchsuche..."
+
+#: ../src/gui_main.c:441
+msgid "Choose folder"
+msgstr "Verzeichnis wählen"
+
+#: ../src/about.c:60
+msgid "GdMap is a tool which allows you to graphically explore your disks."
+msgstr ""
+"GdMap ist ein Tool, das es ermöglicht\\nden Festplatteninhalt graphisch "
+"darzustellen"
+
+#: ../src/about.c:62
+msgid "translator-credits"
+msgstr "Markus Lausser <sgop@users.sourceforge.net>"
+
+#: ../src/preferences.c:288
+msgid "Default color"
+msgstr "Standardfarbe"
+
+#: ../src/preferences.c:292
+msgid "Color for file position"
+msgstr "Farbe für Dateiposition"
+
+#: ../src/preferences.c:296
+msgid "Color for folder position"
+msgstr "Farbe für Verzeichnisposition"
+
+#: ../src/preferences.c:300
+msgid "Color for folders"
+msgstr "Farbe für Verzeichnisse"
+
+#: ../src/preferences.c:306 ../src/preferences.c:309
+msgid "Enter file extensions here"
+msgstr "Dateiendungen hier eingeben"
+
+#: ../src/preferences.c:341
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../src/preferences.c:360
+msgid "Color profile"
+msgstr "Farbschema"
+
+#: ../src/preferences.c:380
+msgid "Basic colors"
+msgstr "Basisfarben"
+
+#: ../src/preferences.c:396
+msgid "File colors"
+msgstr "Dateifarben"
+
+#: ../src/preferences.c:420
+msgid "add new color"
+msgstr "neue Farbe hinzufügen"
+
+#: ../src/preferences.c:485
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: ../src/preferences.c:496
+msgid "Display type"
+msgstr "Ansicht"
+
+#: ../src/preferences.c:502
+msgid "Standard cushioned treemaps"
+msgstr "Normale Kissenansicht"
+
+#: ../src/preferences.c:506
+msgid "Squarified cushioned treemaps"
+msgstr "Quadratische Kissenansicht"
+
+#: ../src/preferences.c:520
+msgid "Cushion settings"
+msgstr "Optionen für die Kissendarstellung"
+
+#: ../src/preferences.c:528
+msgid "Height factor:"
+msgstr "Faktor für die Höhe:"
+
+#: ../src/preferences.c:540
+msgid "Decreasing height:"
+msgstr "Höhenabnahme pro Tiefe"
+
+#: ../src/preferences.c:553
+msgid "General display"
+msgstr "Allgemeine Ansicht"
+
+#: ../src/preferences.c:561
+msgid "Maximum depth:"
+msgstr "Maximale Tiefe"
+
+#. pre instance
+#: ../src/preferences.c:567
+msgid "Use average color of children for folders"
+msgstr "Für Verzeichnisse die Durchschnittsfarbe des Inhalts verwenden"
+
+#: ../src/preferences.c:576
+msgid "(0=unlimited)"
+msgstr "(0=kein Limit)"
+
+#: ../src/preferences.c:582
+msgid "Color settings"
+msgstr "Farbeinstellungen"
+
+#. gtk_table_set_homogeneous(GTK_TABLE(table), TRUE);
+#: ../src/preferences.c:591
+msgid "Enable colors"
+msgstr "Farben benutzen"
+
+#: ../src/preferences.c:598
+msgid "Color profile..."
+msgstr "Farbschema..."
+
+#: ../src/preferences.c:613
+msgid "Scanning options (requires re-scan)"
+msgstr "Plattenscan-Optionen (erfordert neuen Scan)"
+
+#: ../src/preferences.c:619
+msgid "Descend directories on other filesystems"
+msgstr "Verzeichnisse auf anderen Dateisystemen verfolgen"
+
+#: ../src/preferences.c:624
+msgid "Use allocated disk size of files"
+msgstr "Wirklichen Plattenspeicher der Dateien verwenden"

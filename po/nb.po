@@ -1,0 +1,233 @@
+# GdMap.
+# Copyright (C) 2005-2008, Markus Lausser <sgop@users.sourceforge.net>
+# This file is distributed under the same license as the GdMap package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GdMap 0.8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-15 15:51+0200\n"
+"PO-Revision-Date: 2008-05-23 16:05+0200\n"
+"Last-Translator: Hallvard Natvik <hallvard@natvik.com>\n"
+"Language-Team: Norwegian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gdmap.desktop.in.h:1
+msgid "Display disk space using tree maps"
+msgstr "Vis diskbruk i trestruktur"
+
+#: ../data/gdmap.desktop.in.h:2
+msgid "Graphical Disk Map"
+msgstr "Grafisk visning"
+
+#: ../src/gui_main.c:94
+msgid "_File"
+msgstr "_Fil"
+
+#: ../src/gui_main.c:95
+msgid "_View"
+msgstr "_Vis"
+
+#: ../src/gui_main.c:96
+msgid "_Help"
+msgstr "_Hjelp"
+
+#: ../src/gui_main.c:97
+msgid "_Open..."
+msgstr "_Åpne..."
+
+#: ../src/gui_main.c:98
+msgid "Open a folder"
+msgstr "Åpne en mappe"
+
+#: ../src/gui_main.c:101
+msgid "_Quit"
+msgstr "_Slutt"
+
+#: ../src/gui_main.c:102
+msgid "Exit program"
+msgstr "Avslutt"
+
+#: ../src/gui_main.c:105
+msgid "_Back"
+msgstr "_Tilbake"
+
+#: ../src/gui_main.c:106
+msgid "Go back one step"
+msgstr "Tilbake ett steg"
+
+#: ../src/gui_main.c:109
+msgid "_Forward"
+msgstr "_Fremover"
+
+#: ../src/gui_main.c:110
+msgid "Go forward one step"
+msgstr "Fremover ett steg"
+
+#: ../src/gui_main.c:113
+msgid "_Up"
+msgstr "_Opp"
+
+#: ../src/gui_main.c:114
+msgid "Go up one level"
+msgstr "Gå opp ett nivå"
+
+#: ../src/gui_main.c:117
+msgid "_Top"
+msgstr "_Topp"
+
+#: ../src/gui_main.c:118
+msgid "Goto toplevel folder"
+msgstr "Gå til øverste mappe"
+
+#: ../src/gui_main.c:121
+msgid "_Settings..."
+msgstr "_Innstillinger..."
+
+#: ../src/gui_main.c:122
+msgid "Edit settings"
+msgstr "Rediger innstillinger"
+
+#: ../src/gui_main.c:125
+msgid "_About..."
+msgstr "_Om..."
+
+#: ../src/gui_main.c:126
+msgid "About this program"
+msgstr "Om dette programmet"
+
+#: ../src/gui_main.c:129
+msgid "_Refresh"
+msgstr "_Last på nytt"
+
+#: ../src/gui_main.c:130
+msgid "Refresh current view"
+msgstr "Last dette bildet igjen"
+
+#: ../src/gui_main.c:402
+msgid "scanning..."
+msgstr "scanner..."
+
+#: ../src/gui_main.c:441
+msgid "Choose folder"
+msgstr "Velg mappe"
+
+#: ../src/about.c:60
+msgid "GdMap is a tool which allows you to graphically explore your disks."
+msgstr "GdMap er et verktøy som gir deg en grafisk visning av diskbruken."
+
+#: ../src/about.c:62
+msgid "translator-credits"
+msgstr "Hallvard Natvik <hallvard@natvik.com>"
+
+#: ../src/preferences.c:288
+msgid "Default color"
+msgstr "Default farge"
+
+#: ../src/preferences.c:292
+msgid "Color for file position"
+msgstr "Farge for filposisjon"
+
+#: ../src/preferences.c:296
+msgid "Color for folder position"
+msgstr "Farge for mappeposisjon"
+
+#: ../src/preferences.c:300
+msgid "Color for folders"
+msgstr "Mappefarge"
+
+#: ../src/preferences.c:306 ../src/preferences.c:309
+msgid "Enter file extensions here"
+msgstr "Skriv file extension her"
+
+#: ../src/preferences.c:341
+msgid "Delete"
+msgstr "Slett"
+
+#: ../src/preferences.c:360
+msgid "Color profile"
+msgstr "Fargeskjema"
+
+#: ../src/preferences.c:380
+msgid "Basic colors"
+msgstr "Basisfarge"
+
+#: ../src/preferences.c:396
+msgid "File colors"
+msgstr "Filfarge"
+
+#: ../src/preferences.c:420
+msgid "add new color"
+msgstr "legg til ny farge"
+
+#: ../src/preferences.c:485
+msgid "Preferences"
+msgstr "Innstillinger"
+
+#: ../src/preferences.c:496
+msgid "Display type"
+msgstr "Display type"
+
+#: ../src/preferences.c:502
+msgid "Standard cushioned treemaps"
+msgstr "Standard putestruktur"
+
+#: ../src/preferences.c:506
+msgid "Squarified cushioned treemaps"
+msgstr "Kvadratisk putestruktur"
+
+#: ../src/preferences.c:520
+msgid "Cushion settings"
+msgstr "Puteinnstillinger"
+
+#: ../src/preferences.c:528
+msgid "Height factor:"
+msgstr "Høydefaktor:"
+
+#: ../src/preferences.c:540
+msgid "Decreasing height:"
+msgstr "Avtagende høyde:"
+
+#: ../src/preferences.c:553
+msgid "General display"
+msgstr "Generell visning"
+
+#: ../src/preferences.c:561
+msgid "Maximum depth:"
+msgstr "Max dybde:"
+
+#. pre instance
+#: ../src/preferences.c:567
+msgid "Use average color of children for folders"
+msgstr "Gi mapper gjennomsnittsfargen fra undermapper"
+
+#: ../src/preferences.c:576
+msgid "(0=unlimited)"
+msgstr "(0=ubegrenset)"
+
+#: ../src/preferences.c:582
+msgid "Color settings"
+msgstr "Fargeinnstillinger"
+
+#. gtk_table_set_homogeneous(GTK_TABLE(table), TRUE);
+#: ../src/preferences.c:591
+msgid "Enable colors"
+msgstr "Bruk farger"
+
+#: ../src/preferences.c:598
+msgid "Color profile..."
+msgstr "Fargeskjema..."
+
+#: ../src/preferences.c:613
+msgid "Scanning options (requires re-scan)"
+msgstr "Scanneinnstillinger (krever omscanning)"
+
+#: ../src/preferences.c:619
+msgid "Descend directories on other filesystems"
+msgstr "Bruk mapper på andre filsystemer"
+
+#: ../src/preferences.c:624
+msgid "Use allocated disk size of files"
+msgstr "Bruk filenes allokerte diskplass"

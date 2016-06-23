@@ -1,0 +1,238 @@
+# Swedish translation of gdmap.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gdmap package.
+# Daniel Nylander <po@danielnylander.se>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GdMap\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-15 15:51+0200\n"
+"PO-Revision-Date: 2006-08-09 09:37+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gdmap.desktop.in.h:1
+msgid "Display disk space using tree maps"
+msgstr "Visa diskutrymme med trädkartor"
+
+#: ../data/gdmap.desktop.in.h:2
+msgid "Graphical Disk Map"
+msgstr "Grafisk diskkarta"
+
+#: ../src/gui_main.c:94
+msgid "_File"
+msgstr "_Arkiv"
+
+#: ../src/gui_main.c:95
+msgid "_View"
+msgstr "_Visa"
+
+#: ../src/gui_main.c:96
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: ../src/gui_main.c:97
+msgid "_Open..."
+msgstr "_Öppna..."
+
+#: ../src/gui_main.c:98
+msgid "Open a folder"
+msgstr "Öppna en mapp"
+
+#: ../src/gui_main.c:101
+msgid "_Quit"
+msgstr "_Avsluta"
+
+#: ../src/gui_main.c:102
+msgid "Exit program"
+msgstr "Avsluta programmet"
+
+#: ../src/gui_main.c:105
+msgid "_Back"
+msgstr "_Tillbaka"
+
+#: ../src/gui_main.c:106
+msgid "Go back one step"
+msgstr "Gå tillbaka ett steg"
+
+#: ../src/gui_main.c:109
+msgid "_Forward"
+msgstr "_Framåt"
+
+#: ../src/gui_main.c:110
+msgid "Go forward one step"
+msgstr "Gå framåt ett steg"
+
+#: ../src/gui_main.c:113
+msgid "_Up"
+msgstr "_Upp"
+
+#: ../src/gui_main.c:114
+msgid "Go up one level"
+msgstr "Gå upp en nivå"
+
+#: ../src/gui_main.c:117
+msgid "_Top"
+msgstr "_Topp"
+
+#: ../src/gui_main.c:118
+msgid "Goto toplevel folder"
+msgstr "Gå till översta mappen"
+
+#: ../src/gui_main.c:121
+msgid "_Settings..."
+msgstr "_Inställningar..."
+
+#: ../src/gui_main.c:122
+msgid "Edit settings"
+msgstr "Redigera inställningar"
+
+#: ../src/gui_main.c:125
+msgid "_About..."
+msgstr "_Om..."
+
+#: ../src/gui_main.c:126
+msgid "About this program"
+msgstr "Om detta program"
+
+#: ../src/gui_main.c:129
+msgid "_Refresh"
+msgstr "_Uppdatera"
+
+#: ../src/gui_main.c:130
+msgid "Refresh current view"
+msgstr "Uppdatera aktuell vy"
+
+#: ../src/gui_main.c:402
+msgid "scanning..."
+msgstr "söker av..."
+
+#: ../src/gui_main.c:441
+msgid "Choose folder"
+msgstr "Välj mapp"
+
+#: ../src/about.c:60
+msgid "GdMap is a tool which allows you to graphically explore your disks."
+msgstr "GdMap är ett verktyg som låter dig utforska dina diskar grafiskt."
+
+#: ../src/about.c:62
+msgid "translator-credits"
+msgstr "Daniel Nylander <po@danielnylander.se>"
+
+#: ../src/preferences.c:288
+msgid "Default color"
+msgstr "Standardfärg"
+
+#: ../src/preferences.c:292
+msgid "Color for file position"
+msgstr "Färg för filposition"
+
+#: ../src/preferences.c:296
+msgid "Color for folder position"
+msgstr "Färg för mapposition"
+
+#: ../src/preferences.c:300
+msgid "Color for folders"
+msgstr "Färg för mappar"
+
+#: ../src/preferences.c:306 ../src/preferences.c:309
+msgid "Enter file extensions here"
+msgstr "Ange filändelser här"
+
+#: ../src/preferences.c:341
+msgid "Delete"
+msgstr "Ta bort"
+
+#: ../src/preferences.c:360
+msgid "Color profile"
+msgstr "Färgprofil"
+
+#: ../src/preferences.c:380
+msgid "Basic colors"
+msgstr "Enkla färger"
+
+#: ../src/preferences.c:396
+msgid "File colors"
+msgstr "Filfärger"
+
+#: ../src/preferences.c:420
+msgid "add new color"
+msgstr "lägg till ny färg"
+
+#: ../src/preferences.c:485
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: ../src/preferences.c:496
+msgid "Display type"
+msgstr "Visningstyp"
+
+#: ../src/preferences.c:502
+msgid "Standard cushioned treemaps"
+msgstr "Standard dämpade trädkartor"
+
+#: ../src/preferences.c:506
+msgid "Squarified cushioned treemaps"
+msgstr "Rutade dämpande trädkartor"
+
+#: ../src/preferences.c:520
+msgid "Cushion settings"
+msgstr "Dämpningsinställningar"
+
+#: ../src/preferences.c:528
+msgid "Height factor:"
+msgstr "Höjdfaktor:"
+
+#: ../src/preferences.c:540
+msgid "Decreasing height:"
+msgstr "Minskande höjd:"
+
+#: ../src/preferences.c:553
+msgid "General display"
+msgstr "Allmän visning"
+
+#: ../src/preferences.c:561
+msgid "Maximum depth:"
+msgstr "Maximalt djup:"
+
+#. pre instance
+#: ../src/preferences.c:567
+msgid "Use average color of children for folders"
+msgstr "Använd genomsnittlig färg för barn för mappar"
+
+#: ../src/preferences.c:576
+msgid "(0=unlimited)"
+msgstr "(0=obegränsat)"
+
+#: ../src/preferences.c:582
+msgid "Color settings"
+msgstr "Färginställningar"
+
+#. gtk_table_set_homogeneous(GTK_TABLE(table), TRUE);
+#: ../src/preferences.c:591
+msgid "Enable colors"
+msgstr "Aktivera färger"
+
+#: ../src/preferences.c:598
+msgid "Color profile..."
+msgstr "Färgprofil..."
+
+#: ../src/preferences.c:613
+msgid "Scanning options (requires re-scan)"
+msgstr ""
+
+#: ../src/preferences.c:619
+msgid "Descend directories on other filesystems"
+msgstr ""
+
+#: ../src/preferences.c:624
+msgid "Use allocated disk size of files"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Folder color"
+#~ msgstr "Couleurs activées"

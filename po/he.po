@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GdMap 0.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-15 15:51+0200\n"
+"PO-Revision-Date: 2005-10-23 14:00+0200\n"
+"Last-Translator: Misha Bukin <misha.bukin@gmail.com>\n"
+"Language-Team: Hebrew <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gdmap.desktop.in.h:1
+msgid "Display disk space using tree maps"
+msgstr "הראה מקום בדיסק בעזרת מפות עץ"
+
+#: ../data/gdmap.desktop.in.h:2
+msgid "Graphical Disk Map"
+msgstr "מפת דיסק גרפית"
+
+#: ../src/gui_main.c:94
+msgid "_File"
+msgstr "_קובץ"
+
+#: ../src/gui_main.c:95
+msgid "_View"
+msgstr "_תצוגה"
+
+#: ../src/gui_main.c:96
+msgid "_Help"
+msgstr "_עזרה"
+
+#: ../src/gui_main.c:97
+msgid "_Open..."
+msgstr "_פתח..."
+
+#: ../src/gui_main.c:98
+msgid "Open a folder"
+msgstr "פתח תיקיה"
+
+#: ../src/gui_main.c:101
+msgid "_Quit"
+msgstr "_צא"
+
+#: ../src/gui_main.c:102
+msgid "Exit program"
+msgstr "צא מהתוכנה"
+
+#: ../src/gui_main.c:105
+msgid "_Back"
+msgstr "_אחורה"
+
+#: ../src/gui_main.c:106
+msgid "Go back one step"
+msgstr "לך אחורה צעד אחד"
+
+#: ../src/gui_main.c:109
+msgid "_Forward"
+msgstr "_קדימה"
+
+#: ../src/gui_main.c:110
+msgid "Go forward one step"
+msgstr "לך קדימה צעד אחד"
+
+#: ../src/gui_main.c:113
+msgid "_Up"
+msgstr "_למעלה"
+
+#: ../src/gui_main.c:114
+msgid "Go up one level"
+msgstr "לך למעלה שלב אחד"
+
+#: ../src/gui_main.c:117
+msgid "_Top"
+msgstr "_עליון"
+
+#: ../src/gui_main.c:118
+msgid "Goto toplevel folder"
+msgstr "לך לתיקיה בשלב עליון"
+
+#: ../src/gui_main.c:121
+msgid "_Settings..."
+msgstr "_הגדרות..."
+
+#: ../src/gui_main.c:122
+msgid "Edit settings"
+msgstr "ערוך הגדרות"
+
+#: ../src/gui_main.c:125
+msgid "_About..."
+msgstr "_על..."
+
+#: ../src/gui_main.c:126
+msgid "About this program"
+msgstr "על התוכנה הזו"
+
+#: ../src/gui_main.c:129
+msgid "_Refresh"
+msgstr "_רענן"
+
+#: ../src/gui_main.c:130
+msgid "Refresh current view"
+msgstr "רענן תצוגה נוכחית"
+
+#: ../src/gui_main.c:402
+msgid "scanning..."
+msgstr "סורק..."
+
+#: ../src/gui_main.c:441
+msgid "Choose folder"
+msgstr "בחר תיקיה"
+
+#: ../src/about.c:60
+msgid "GdMap is a tool which allows you to graphically explore your disks."
+msgstr "התוכנה היא כלי המאפשר לך לחקור את הדיסקים בצורה גרפית"
+
+#: ../src/about.c:62
+msgid "translator-credits"
+msgstr "Misha Bukin <misha_bomb@yahoo.com>"
+
+#: ../src/preferences.c:288
+msgid "Default color"
+msgstr ""
+
+#: ../src/preferences.c:292
+msgid "Color for file position"
+msgstr ""
+
+#: ../src/preferences.c:296
+msgid "Color for folder position"
+msgstr ""
+
+#: ../src/preferences.c:300
+#, fuzzy
+msgid "Color for folders"
+msgstr "בחר תיקיה"
+
+#: ../src/preferences.c:306 ../src/preferences.c:309
+msgid "Enter file extensions here"
+msgstr ""
+
+#: ../src/preferences.c:341
+msgid "Delete"
+msgstr ""
+
+#: ../src/preferences.c:360
+#, fuzzy
+msgid "Color profile"
+msgstr "בחר תיקיה"
+
+#: ../src/preferences.c:380
+#, fuzzy
+msgid "Basic colors"
+msgstr "צבעים מאופשרים"
+
+#: ../src/preferences.c:396
+#, fuzzy
+msgid "File colors"
+msgstr "צבעים מאופשרים"
+
+#: ../src/preferences.c:420
+msgid "add new color"
+msgstr ""
+
+#: ../src/preferences.c:485
+msgid "Preferences"
+msgstr "העדפות"
+
+#: ../src/preferences.c:496
+msgid "Display type"
+msgstr "סוג תצוגה"
+
+#: ../src/preferences.c:502
+msgid "Standard cushioned treemaps"
+msgstr "מפות עץ מרוככות רגילות"
+
+#: ../src/preferences.c:506
+msgid "Squarified cushioned treemaps"
+msgstr "מפות עץ מרוככות בריבוע"
+
+#: ../src/preferences.c:520
+msgid "Cushion settings"
+msgstr "הגדרות ריכוך"
+
+#: ../src/preferences.c:528
+msgid "Height factor:"
+msgstr "גורם גובה:"
+
+#: ../src/preferences.c:540
+msgid "Decreasing height:"
+msgstr "הקטנה בגובה:"
+
+#: ../src/preferences.c:553
+msgid "General display"
+msgstr "תצוגה כללית"
+
+#: ../src/preferences.c:561
+msgid "Maximum depth:"
+msgstr "עומק מקסימלי:"
+
+#. pre instance
+#: ../src/preferences.c:567
+msgid "Use average color of children for folders"
+msgstr ""
+
+#: ../src/preferences.c:576
+msgid "(0=unlimited)"
+msgstr "(0=לא מוגבל)"
+
+#: ../src/preferences.c:582
+msgid "Color settings"
+msgstr "הגדרות צבע"
+
+#. gtk_table_set_homogeneous(GTK_TABLE(table), TRUE);
+#: ../src/preferences.c:591
+#, fuzzy
+msgid "Enable colors"
+msgstr "צבעים מאופשרים"
+
+#: ../src/preferences.c:598
+msgid "Color profile..."
+msgstr "בחר תיקיה..."
+
+#: ../src/preferences.c:613
+msgid "Scanning options (requires re-scan)"
+msgstr ""
+
+#: ../src/preferences.c:619
+msgid "Descend directories on other filesystems"
+msgstr ""
+
+#: ../src/preferences.c:624
+msgid "Use allocated disk size of files"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Folder color"
+#~ msgstr "צבעים מאופשרים"
