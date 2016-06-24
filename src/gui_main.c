@@ -686,26 +686,33 @@ static gboolean on_area_motion(GtkWidget* widget, GdkEventMotion* event)
     return TRUE;
 }
 
-void v_context_menu_copy_path(GtkWidget *menuitem, tree_info_t *info)
+static void v_context_menu_copy_path(GtkWidget *menuitem, tree_info_t *info)
 {
     char *full_path;
     full_path = tree_full_name(info->node);
     if(full_path == NULL) return;
 
-    // Quote the string if it has spaces...
-    if(index(full_path,' ')!=NULL) {
-        char *temp;
-        temp = g_strdup_printf("\"%s\"", full_path);
-        g_free(full_path);
-        full_path = temp;
+    // Quote the string if it has weird chars
+    char *needs_escape = " ?><|!@#$%^&*+=`";
+    size_t sz_special = strlen(needs_escape);
+    size_t idx_special;
+    for(idx_special = 0; idx_special < sz_special; ++idx_special) {
+        if (index(full_path, needs_escape[idx_special]) != NULL) {
+            char *temp;
+            temp = g_strdup_printf("\"%s\"", full_path);
+            g_free(full_path);
+            full_path = temp;
+            break;
+        }
     }
 
+    //
     GtkClipboard* clipboard = gtk_clipboard_get(GDK_SELECTION_CLIPBOARD);
     gtk_clipboard_set_text(clipboard,full_path,-1);
     g_free(full_path);
 }
 
-void v_context_menu_delete(GtkWidget *menuitem, tree_info_t *info)
+static void v_context_menu_delete(GtkWidget *menuitem, tree_info_t *info)
 {
     char *full_path;
     full_path = tree_full_name(info->node);
@@ -715,6 +722,41 @@ void v_context_menu_delete(GtkWidget *menuitem, tree_info_t *info)
     } else {
         g_print("Removed: %s", full_path);
     }
+    g_free(full_path);
+}
+
+static void v_context_gnome_open(GtkWidget *menuitem, tree_info_t *info)
+{
+    char *full_path;
+    full_path = tree_full_name(info->node);
+    if(full_path == NULL) return;
+
+
+    char *cmd;
+    cmd = g_strdup_printf("gnome-open \"%s\"", full_path);
+    system(cmd);
+
+    g_free(cmd);
+    g_free(full_path);
+}
+
+static void v_context_gnome_open_parent(GtkWidget *menuitem, tree_info_t *info)
+{
+    char *full_path;
+    full_path = tree_full_name(info->node);
+    if(full_path == NULL) return;
+
+
+    char *cmd;
+    char *sub = rindex(full_path,'/');
+    if(sub != NULL) {
+        *sub = '\0';
+    }
+    cmd = g_strdup_printf("gnome-open \"%s\"", full_path);
+    g_print("Command %s\n",cmd);
+    system(cmd);
+
+    g_free(cmd);
     g_free(full_path);
 }
 
@@ -736,10 +778,12 @@ static gboolean on_area_button_press(GtkWidget* widget, GdkEventButton* event)
             tree_info_t* sub = tree_info_find_path(CurrentItem, info);
             if (sub) gui_tree_display(sub, FALSE, TRUE);
      } else if (event->button == 3) {
-            GtkWidget *menu, *menuitem_copy_path, *menuitem_delete;
+            GtkWidget *menu, *menuitem_copy_path, *menuitem_delete, *menuitem_gnome_open, *menuitem_gnome_open_dir;
 
             menu = gtk_menu_new();
             menuitem_copy_path = gtk_menu_item_new_with_label("Copy Path");
+            menuitem_gnome_open = gtk_menu_item_new_with_label("Open File (gnome-open)");
+            menuitem_gnome_open_dir = gtk_menu_item_new_with_label("Open Containing Directory (gnome-open)");
             menuitem_delete = gtk_menu_item_new_with_label("Delete (shift-z to activate)");
 
             if(Delete_Enabled == FALSE) {
@@ -752,7 +796,15 @@ static gboolean on_area_button_press(GtkWidget* widget, GdkEventButton* event)
             g_signal_connect(menuitem_delete, "activate",
                              (GCallback) v_context_menu_delete, info);
 
+            g_signal_connect(menuitem_gnome_open, "activate",
+                             (GCallback) v_context_gnome_open, info);
+
+            g_signal_connect(menuitem_gnome_open_dir, "activate",
+                             (GCallback)v_context_gnome_open_parent, info);
+
             gtk_menu_shell_append(GTK_MENU_SHELL(menu), menuitem_copy_path);
+            gtk_menu_shell_append(GTK_MENU_SHELL(menu), menuitem_gnome_open);
+            gtk_menu_shell_append(GTK_MENU_SHELL(menu), menuitem_gnome_open_dir);
             gtk_menu_shell_append(GTK_MENU_SHELL(menu), menuitem_delete);
 
             gtk_widget_show_all(menu);
