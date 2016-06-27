@@ -753,7 +753,27 @@ static void v_context_gnome_open_parent(GtkWidget *menuitem, tree_info_t *info)
         *sub = '\0';
     }
     cmd = g_strdup_printf("gnome-open \"%s\"", full_path);
-    g_print("Command %s\n",cmd);
+//    g_print("Command %s\n",cmd);
+    system(cmd);
+
+    g_free(cmd);
+    g_free(full_path);
+}
+
+static void v_context_open_terminal(GtkWidget *menuitem, tree_info_t *info)
+{
+    char *full_path;
+    full_path = tree_full_name(info->node);
+    if(full_path == NULL) return;
+
+
+    char *cmd;
+    char *sub = rindex(full_path,'/');
+    if(sub != NULL) {
+        *sub = '\0';
+    }
+    cmd = g_strdup_printf("gnome-terminal --working-directory=\"%s\"", full_path);
+//    g_print("Command %s\n",cmd);
     system(cmd);
 
     g_free(cmd);
@@ -778,12 +798,14 @@ static gboolean on_area_button_press(GtkWidget* widget, GdkEventButton* event)
             tree_info_t* sub = tree_info_find_path(CurrentItem, info);
             if (sub) gui_tree_display(sub, FALSE, TRUE);
      } else if (event->button == 3) {
-            GtkWidget *menu, *menuitem_copy_path, *menuitem_delete, *menuitem_gnome_open, *menuitem_gnome_open_dir;
+            GtkWidget *menu, *menuitem_copy_path, *menuitem_delete, *menuitem_gnome_open, *menuitem_gnome_open_dir,
+            *menuitem_gnome_terminal;
 
             menu = gtk_menu_new();
             menuitem_copy_path = gtk_menu_item_new_with_label("Copy Path");
             menuitem_gnome_open = gtk_menu_item_new_with_label("Open File (gnome-open)");
             menuitem_gnome_open_dir = gtk_menu_item_new_with_label("Open Containing Directory (gnome-open)");
+            menuitem_gnome_terminal = gtk_menu_item_new_with_label("Open Terminal in Directory (gnome-terminal)");
             menuitem_delete = gtk_menu_item_new_with_label("Delete (shift-z to activate)");
 
             if(Delete_Enabled == FALSE) {
@@ -802,9 +824,13 @@ static gboolean on_area_button_press(GtkWidget* widget, GdkEventButton* event)
             g_signal_connect(menuitem_gnome_open_dir, "activate",
                              (GCallback)v_context_gnome_open_parent, info);
 
+            g_signal_connect(menuitem_gnome_terminal, "activate",
+                             (GCallback)v_context_open_terminal, info);
+
             gtk_menu_shell_append(GTK_MENU_SHELL(menu), menuitem_copy_path);
             gtk_menu_shell_append(GTK_MENU_SHELL(menu), menuitem_gnome_open);
             gtk_menu_shell_append(GTK_MENU_SHELL(menu), menuitem_gnome_open_dir);
+            gtk_menu_shell_append(GTK_MENU_SHELL(menu), menuitem_gnome_terminal);
             gtk_menu_shell_append(GTK_MENU_SHELL(menu), menuitem_delete);
 
             gtk_widget_show_all(menu);
