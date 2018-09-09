@@ -16,8 +16,8 @@ make
 (Used CMake so I could use CLion. Also the pkg-config macros make this a very simple build. CMake is generally garbage tho the way a lot of ppl use it. God I wasted like a week getting Trilinos to work. If you want to see a bad example of cmake look there.)
 
 Required libraries (by pkg-config):
-	- cairo 
-	- pango 
-	- glib-2.0 
-	- gtk+-2.0 
-	- libxml-2.0
+- cairo 
+- pango 
+- glib-2.0 
+- gtk+-2.0 
+- libxml-2.0
