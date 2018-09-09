@@ -8,7 +8,7 @@
  */
 
 #ifdef HAVE_CONFIG_H
-#  include <config.h>
+#  include "config.h"
 #endif
 
 #if TIME_WITH_SYS_TIME

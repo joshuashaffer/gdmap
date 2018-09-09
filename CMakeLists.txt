@@ -1,7 +1,14 @@
 cmake_minimum_required(VERSION 3.3)
 project(gdmap_0_8_1)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+# do pkg-config 
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GTK REQUIRED cairo pango glib-2.0 gtk+-2.0 libxml-2.0)
+
+
+# Probably a more cmake-onic way of doing this ...
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -I. -I.. -O3 -march=native ")
 
 set(SOURCE_FILES
     src/about.c
@@ -22,6 +29,10 @@ set(SOURCE_FILES
     src/utils.h
     config.h)
 
-include_directories(/usr/include/gtk-2.0/ /usr/include/glib-2.0)
+# Hack to use old autoconf crap.
+add_definitions(-DHAVE_CONFIG_H=1 -DGDMAP_LOCALE_DIR="./po/")
 
 add_executable(gdmap_0_8_1 ${SOURCE_FILES})
+target_link_libraries(gdmap_0_8_1 ${GTK_LIBRARIES} m)
+target_include_directories(gdmap_0_8_1 PUBLIC ${GTK_INCLUDE_DIRS})
+target_compile_options(gdmap_0_8_1 PUBLIC ${GTK_CFLAGS} )

@@ -11,7 +11,7 @@
 #define _TREE_H_
 
 #ifdef HAVE_CONFIG_H
-#  include <config.h>
+#  include "config.h"
 #endif
 
 typedef struct _tree_t tree_t;
