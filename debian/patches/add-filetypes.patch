@@ -14,7 +14,7 @@ Origin: http://patches.ubuntu.com/g/gdmap/gdmap_0.8.1-1.1ubuntu1.patch
 +    Colors = g_list_append(Colors, color_new_with_exts("#FF00FF", "exe msi deb rpm run"));
      Colors = g_list_append(Colors, color_new_with_exts("#BB00BB", "dll o lo a so"));
 -    Colors = g_list_append(Colors, color_new_with_exts("#00AA00", "c cc cpp"));
-+    Colors = g_list_append(Colors, color_new_with_exts("#00AA00", "c cc cpp py php php3 php4 php5 js sh bat"));
++    Colors = g_list_append(Colors, color_new_with_exts("#00AA00", "c cc cpp cs py php php3 php4 php5 js sh bat kt ino"));
      Colors = g_list_append(Colors, color_new_with_exts("#00FF00", "h hh"));
 -    Colors = g_list_append(Colors, color_new_with_exts("#EEEE00", "eps bmp svg gif png jpg jpeg tif tiff"));
 -    Colors = g_list_append(Colors, color_new_with_exts("#00DDDD", "mp3 ogg flac wav"));
