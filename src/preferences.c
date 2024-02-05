@@ -1,10 +1,10 @@
-/* Copyright (C) 2005 sgop@users.sourceforge.net This is free software
+/*
+ * Copyright (C) 2005-2006 sgop@users.sourceforge.net
+ * Copyright (C) 2024 Raphael Rosch <gnome-dev@insaner.com>
+ * 
+ * This is free software
  * distributed under the terms of the GNU Public License.  See the
  * file COPYING for details.
- */
-/* $Revision: 1.6 $
- * $Date: 2008/05/26 20:33:11 $
- * $Author: sgop $
  */
 
 #include <stdlib.h>
@@ -16,11 +16,14 @@
 #include "gui_support.h"
 
 static GtkWidget* PrefWin = NULL;
-static RedrawFunc RedrawCallback = NULL;
+static Func_p RedrawCallback = NULL;
+static Func_p WinTitleCallback = NULL;
 
 static unsigned DisplayMode = DISPLAY_SQUARE_CUSHION;
 static double HValue = 0.5;
 static double FValue = 0.8;
+static gboolean PathInTitle = TRUE;
+static gboolean VersionInTitle = TRUE;
 static unsigned MaxDepth = 0;
 static gboolean UseColors = TRUE;
 static gboolean UseAverage = FALSE;
@@ -37,6 +40,8 @@ static void pref_save()
     GKeyFile* file = g_key_file_new();
     
     g_key_file_set_integer(file, "Display", "Mode", DisplayMode);
+    g_key_file_set_boolean(file, "Display", "PathInTitle", PathInTitle);
+    g_key_file_set_boolean(file, "Display", "VersionInTitle", VersionInTitle);
     g_key_file_set_integer(file, "Display", "MaxDepth", MaxDepth);
     g_key_file_set_integer(file, "Display", "HValue", (int)(HValue*100));
     g_key_file_set_integer(file, "Display", "FValue", (int)(FValue*100));
@@ -70,7 +75,13 @@ static void pref_save()
 }
 
 
-void pref_set_redraw_callback(RedrawFunc func)
+void pref_set_window_title_callback(Func_p func)
+{
+    WinTitleCallback = func;
+}
+
+
+void pref_set_redraw_callback(Func_p func)
 {
     RedrawCallback = func;
 }
@@ -88,6 +99,16 @@ double pref_get_h(void)
 double pref_get_f(void)
 {
     return FValue;
+}
+
+gboolean pref_get_show_path_in_title(void)
+{
+    return PathInTitle;
+}
+
+gboolean pref_get_show_version_in_title(void)
+{
+    return VersionInTitle;
 }
 
 unsigned pref_get_max_depth(void)
@@ -141,6 +162,20 @@ static void pref_set_f(double value)
     pref_save();
 }
 
+static void pref_set_show_path_in_title(gboolean value)
+{
+    PathInTitle = value;
+    pref_save();
+    if (WinTitleCallback) WinTitleCallback();
+}
+
+static void pref_set_show_version_in_title(gboolean value)
+{
+    VersionInTitle = value;
+    pref_save();
+    if (WinTitleCallback) WinTitleCallback();
+}
+
 static void pref_set_max_depth(unsigned value)
 {
     MaxDepth = value;
@@ -190,6 +225,16 @@ static void on_h_changed(GtkSpinButton* button)
 static void on_f_changed(GtkSpinButton* button)
 {
     pref_set_f(gtk_spin_button_get_value(button));
+}
+
+static void on_show_path_in_title(GtkToggleButton* button)
+{
+    pref_set_show_path_in_title(gtk_toggle_button_get_active(button));
+}
+
+static void on_show_version_in_title(GtkToggleButton* button)
+{
+    pref_set_show_version_in_title(gtk_toggle_button_get_active(button));
 }
 
 static void on_depth_changed(GtkSpinButton* button, GtkWidget* other)
@@ -550,6 +595,26 @@ void gui_show_preferences(GtkWindow* parent) {
                    G_CALLBACK(on_f_changed), NULL);
 
   
+  // Window Title
+  // BEGIN TODO
+  section = ui_create_section(_("Window Title"), NULL, &hbox, NULL);
+  gtk_box_pack_start(GTK_BOX(vbox0), section, FALSE, FALSE, 0);
+  
+  vbox = gtk_vbox_new(FALSE, 2);
+  gtk_box_pack_start(GTK_BOX(hbox), vbox, TRUE, TRUE, 0);
+
+  item = gtk_check_button_new_with_label(_("Display scanned path"));
+  gtk_box_pack_start(GTK_BOX(vbox), item, FALSE, FALSE, 0);
+  gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(item), pref_get_show_path_in_title());
+  g_signal_connect(G_OBJECT(item), "toggled", G_CALLBACK(on_show_path_in_title), item2);
+
+  item = gtk_check_button_new_with_label(_("Display version"));
+  gtk_box_pack_start(GTK_BOX(vbox), item, FALSE, FALSE, 0);
+  gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(item), pref_get_show_version_in_title());
+  g_signal_connect(G_OBJECT(item), "toggled", G_CALLBACK(on_show_version_in_title), item2);
+  // END TODO
+
+  // General display
   section = ui_create_section(_("General display"), NULL, &hbox, NULL);
   gtk_box_pack_start(GTK_BOX(vbox0), section, FALSE, FALSE, 0);
   
@@ -670,6 +735,18 @@ static void pref_load(const char* filename)
     {
         int val = g_key_file_get_integer(file, "Display", "Mode", NULL);
         pref_set_display_mode(val);
+    }
+  
+    if (g_key_file_has_key(file, "Display", "PathInTitle", NULL))
+    {
+        gboolean val = g_key_file_get_boolean(file, "Display", "PathInTitle", NULL);
+        pref_set_show_path_in_title(val);
+    }
+  
+    if (g_key_file_has_key(file, "Display", "VersionInTitle", NULL))
+    {
+        gboolean val = g_key_file_get_boolean(file, "Display", "VersionInTitle", NULL);
+        pref_set_show_version_in_title(val);
     }
   
     if (g_key_file_has_key(file, "Display", "MaxDepth", NULL))

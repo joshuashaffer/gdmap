@@ -16,6 +16,12 @@
 
 #include "tree.h"
 
+//static const char* Folder = NULL;
+extern const char* Folder;
+extern const char* AppDisplayName;
+
+static void gui_set_window_title(const char* title);
+static void gui_update_window_title(void);
 GtkWidget* gui_create_main_win (void);
 GtkWidget* gui_get_main_win();
 void gui_tree_load_and_display(const char* folder);
