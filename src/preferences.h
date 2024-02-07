@@ -13,12 +13,13 @@
 #define DISPLAY_STANDARD_CUSHION    0
 #define DISPLAY_SQUARE_CUSHION      1
 
-typedef void (*RedrawFunc)(void);
+typedef void (*Func_p)(void);
 
 /* extern gboolean LeaveDevice; */
 /* extern gboolean UseReportedSize; */
 
-void pref_set_redraw_callback(RedrawFunc func);
+void pref_set_window_title_callback(Func_p func);
+void pref_set_redraw_callback(Func_p func);
 void pref_init();
 
 unsigned pref_get_display_mode(void);

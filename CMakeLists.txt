@@ -16,5 +16,5 @@ set(SOURCE_FILES
     src/utils.c)
 
 include_directories(${GTK2_INCLUDE_DIRS} ${LIBXML2_INCLUDE_DIRS} . ${PROJECT_SOURCE_DIR})
-add_executable(gdmap_0_8_1 ${SOURCE_FILES})
-target_link_libraries(gdmap_0_8_1 ${GTK2_LIBRARIES} ${LIBXML2_LIBRARIES} m)
+add_executable(gdmap_0_9_0 ${SOURCE_FILES})
+target_link_libraries(gdmap_0_9_0 ${GTK2_LIBRARIES} ${LIBXML2_LIBRARIES} m)

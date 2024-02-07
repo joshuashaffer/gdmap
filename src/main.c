@@ -1,10 +1,9 @@
-/* Copyright (C) 2005-2006 sgop@users.sourceforge.net
+/*
+ * Copyright (C) 2005-2006 sgop@users.sourceforge.net
+ * Copyright (C) 2024 Raphael Rosch <gnome-dev@insaner.com>
+ * 
  * This is free software distributed under the terms of the
  * GNU Public License.  See the file COPYING for details.
- */
-/* $Revision: 1.8 $
- * $Date: 2008/05/23 14:54:28 $
- * $Author: sgop $
  */
 
 #ifdef HAVE_CONFIG_H
@@ -21,6 +20,9 @@
 
 #define NL "\n"
 
+const char* AppDisplayName = "Graphical Disk Map";
+const char* Folder = NULL;
+
 static const char* GtkResource =
   "style \"event\" {"NL
   "  fg[NORMAL] = { 0, 0.5, 1.0 }"NL
@@ -28,8 +30,6 @@ static const char* GtkResource =
   "}"NL
   ""NL
   "widget \"*EventLabel*\" style \"event\""NL;
-
-static const char* Folder = NULL;
 
 static GOptionEntry Options[] = {
   { "folder", 'f', 0, G_OPTION_ARG_STRING, &Folder, "Inspect folder", "dir" },

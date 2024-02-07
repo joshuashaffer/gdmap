@@ -1,10 +1,10 @@
-/* Copyright (C) 2005-2008 sgop@users.sourceforge.net
- * This is free software distributed under the terms of the GNU Public
- * License.  See the file COPYING for details.
- */
-/* $Revision: 1.2 $
- * $Date: 2008/05/23 14:54:24 $
- * $Author: sgop $
+/*
+ * Copyright (C) 2005-2006 sgop@users.sourceforge.net
+ * Copyright (C) 2024 Raphael Rosch <gnome-dev@insaner.com>
+ * 
+ * This is free software
+ * distributed under the terms of the GNU Public License.  See the
+ * file COPYING for details.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -37,6 +37,7 @@ void gui_show_about(GtkWindow* parent)
     GtkWidget* win;
     const char* authors[] = {
         "Markus Lausser <sgop@users.sourceforge.net>",
+        "Raphael Rosch <gnome-dev@insaner.com>",
         NULL
     };
     

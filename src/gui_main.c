@@ -1,10 +1,10 @@
-/* Copyright (C) 2005 sgop@users.sourceforge.net This is free software
+/*
+ * Copyright (C) 2005-2006 sgop@users.sourceforge.net
+ * Copyright (C) 2024 Raphael Rosch <gnome-dev@insaner.com>
+ * 
+ * This is free software
  * distributed under the terms of the GNU Public License.  See the
  * file COPYING for details.
- */
-/* $Revision: 1.12 $
- * $Date: 2008/05/23 14:54:28 $
- * $Author: sgop $
  */
 
 #ifdef HAVE_CONFIG_H
@@ -432,6 +432,7 @@ void gui_tree_load_and_display(const char* folder)
         tree_info_t* info = tree_info_create(tree);
         gui_tree_display(info, TRUE, TRUE);
     }
+    gui_update_window_title();
 }
 
 
@@ -1007,6 +1008,26 @@ static GdkPixbuf* create_pixbuf(const gchar *filename)
     return pix;
 }
 
+static void gui_set_window_title(const char* title)
+{
+    gtk_window_set_title(GTK_WINDOW(MainWin), title);
+}
+
+static void gui_update_window_title(void)
+{
+    char* temp = "";
+    if (pref_get_show_path_in_title())
+        temp = g_strdup_printf("%s  —  ", Folder);
+    
+    temp = g_strdup_printf("%s %s", temp, AppDisplayName);
+
+    if (pref_get_show_version_in_title())
+        temp = g_strdup_printf("%s %s", temp, VERSION);
+    
+    gui_set_window_title(temp);
+    g_free(temp);
+}
+
 GtkWidget* gui_create_main_win(void)
 {
     GtkWidget* win;
@@ -1015,7 +1036,7 @@ GtkWidget* gui_create_main_win(void)
 
     win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
     MainWin = win;
-    gtk_window_set_title(GTK_WINDOW(win), "Graphical Disk Map "VERSION);
+    gui_update_window_title();
     gtk_window_set_role(GTK_WINDOW(win), "Main window");
     gtk_window_set_default_icon(create_pixbuf("gdmap_icon.png"));
     gtk_window_set_default_size(GTK_WINDOW(win), 700, 450);
@@ -1058,6 +1079,7 @@ GtkWidget* gui_create_main_win(void)
     gtk_widget_show(win);
 
     pref_set_redraw_callback(gui_tree_redraw);
+    pref_set_window_title_callback(gui_update_window_title);
 
     return win;
 }

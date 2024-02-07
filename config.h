@@ -65,13 +65,13 @@
 #define PACKAGE_NAME "GdMap"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "GdMap 0.8.1"
+#define PACKAGE_STRING "GdMap 0.9.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "gdmap"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.8.1"
+#define PACKAGE_VERSION "0.9.0"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
@@ -83,7 +83,7 @@
 /* #undef TM_IN_SYS_TIME */
 
 /* Version number of package */
-#define VERSION "0.8.1"
+#define VERSION "0.9.0"
 
 /* Define to 1 if your processor stores words with the most significant byte
    first (like Motorola and SPARC, unlike Intel and VAX). */
