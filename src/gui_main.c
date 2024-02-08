@@ -1015,17 +1015,25 @@ static void gui_set_window_title(const char* title)
 
 static void gui_update_window_title(void)
 {
-    char* temp = "";
-    if (pref_get_show_path_in_title())
+    const gboolean is_folder_set = Folder != NULL;
+    const gboolean is_show_path = is_folder_set && pref_get_show_path_in_title();
+    const gboolean is_show_vesion = pref_get_show_version_in_title();
+    gchar* temp = NULL;
+    // fprintf(stderr, "XXX: FOLDER IS %s", Folder);
+    if(is_show_path && is_show_vesion) {
+        temp = g_strdup_printf("%s  —  %s %s", Folder, AppDisplayName, VERSION);
+    } else if(is_show_vesion) {
+        temp = g_strdup_printf("%s %s", AppDisplayName, VERSION);
+    } else if(is_show_path) {
         temp = g_strdup_printf("%s  —  ", Folder);
-    
-    temp = g_strdup_printf("%s %s", temp, AppDisplayName);
+    } else {
+        temp = g_strdup_printf("%s", AppDisplayName);
+    }
 
-    if (pref_get_show_version_in_title())
-        temp = g_strdup_printf("%s %s", temp, VERSION);
-    
-    gui_set_window_title(temp);
-    g_free(temp);
+    if(temp != NULL) {
+        gui_set_window_title(temp);
+        g_free(temp);
+    }
 }
 
 GtkWidget* gui_create_main_win(void)

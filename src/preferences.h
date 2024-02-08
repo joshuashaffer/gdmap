@@ -30,6 +30,8 @@ gboolean pref_get_use_colors(void);
 gboolean pref_get_use_average(void);
 gboolean pref_get_leave_device(void);
 gboolean pref_get_use_reported_size(void);
+gboolean pref_get_show_path_in_title(void);
+gboolean pref_get_show_version_in_title(void);
 
 void gui_show_preferences(GtkWindow* parent);
 
